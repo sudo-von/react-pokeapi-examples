@@ -6,11 +6,11 @@ interface IBadgeProps {
 }
 
 const badgeVariety = {
-    primary: 'bg-blue-100 text-blue-200',
-    secondary: 'bg-green-100 text-green-200',
-    danger: 'bg-rose-100 text-rose-200',
-    warning: 'bg-amber-100 text-amber-200',
-    info: 'bg-sky-100 text-sky-200',
+    primary: 'bg-blue-200 text-blue-600',
+    secondary: 'bg-green-200 text-green-600',
+    danger: 'bg-rose-200 text-rose-600',
+    warning: 'bg-amber-200 text-amber-600',
+    info: 'bg-sky-200 text-sky-600',
 };
 
 const Badge: FC<IBadgeProps> = ({
