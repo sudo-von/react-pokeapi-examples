@@ -2,8 +2,7 @@ import { FC } from 'react';
 import Button from '../Button/Button';
 import Input, { IInputProps } from '../Input/Input';
 
-interface ISearchProps extends IInputProps {
-}
+interface ISearchProps extends IInputProps {}
 
 const Search: FC<ISearchProps> = ({
   name,
