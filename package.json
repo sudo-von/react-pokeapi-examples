@@ -1,8 +1,14 @@
 {
-  "name": "react-pokeapi-examples",
+  "name": "@pokeapi/root",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "start": "lerna run start --stream"
+  },
   "devDependencies": {
     "lerna": "^6.5.1"
   },
