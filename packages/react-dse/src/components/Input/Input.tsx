@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-interface IInputProps {
+export interface IInputProps {
     name?: string,
     value?: string,
     type?: 'text' | 'number',
