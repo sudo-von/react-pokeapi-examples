@@ -8,6 +8,7 @@ module.exports = {
         libraryTarget: 'umd',
         clean: true
     },
+    mode: 'production',
     module: {
         rules: [
             {
@@ -29,8 +30,5 @@ module.exports = {
                 loader: "ts-loader",
             },
         ],
-    },
-    resolve: {
-        extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
-    },
+    }
 };

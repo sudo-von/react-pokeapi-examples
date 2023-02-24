@@ -3,12 +3,15 @@
   "main": "dist/bundle.js",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --mode production && npm run build-tailwind",
+    "build": "webpack --config webpack.production.config.js && npm run build-tailwind",
     "build-storybook": "build-storybook",
     "build-tailwind": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
-    "start": "start-storybook -p 3000",
-    "test": "jest",
-    "test-coverage": "jest --coverage"
+    "build-test": "jest --coverage",
+    "start": "npm run start-webpack && npm run start-storybook && npm run start-tailwind",
+    "start-webpack": "webpack --config webpack-development.config.js",
+    "start-storybook": "start-storybook -p 3000",
+    "start-tailwind": "npm run build-tailwind --watch",
+    "start-test": "jest --watch --coverage=false"
   },
   "keywords": [],
   "author": "",
