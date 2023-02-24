@@ -1,11 +1,9 @@
 {
   "name": "@poke-api/dse",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "storybook": "start-storybook -p 6006",
+    "start": "start-storybook -p 3000",
     "build-storybook": "build-storybook"
   },
   "keywords": [],
