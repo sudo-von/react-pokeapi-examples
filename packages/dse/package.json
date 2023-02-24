@@ -4,7 +4,9 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "start-storybook -p 3000",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
