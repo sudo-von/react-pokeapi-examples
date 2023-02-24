@@ -8,6 +8,7 @@ module.exports = {
         filename: 'bundle.js',
         clean: true
     },
+    mode: 'development',
     module: {
         rules: [
             {
@@ -30,12 +31,9 @@ module.exports = {
             },
         ],
     },
-    resolve: {
-        extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
-    },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Poke-API using react hooks',
+            title: 'Development poke-API using react hooks',
             template: './public/index.html',
         })
     ]

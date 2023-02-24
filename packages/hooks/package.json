@@ -2,10 +2,11 @@
   "name": "hooks",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack --mode development",
-    "test": "jest",
-    "test-coverage": "jest --coverage"
+    "build": "webpack --config webpack.production.config.js",
+    "build-test": "jest --coverage",
+    "start": "npm run start-webpack",
+    "start-webpack": "webpack --config webpack-development.config.js",
+    "start-test": "jest --watch --coverage=false"
   },
   "keywords": [],
   "author": "",
