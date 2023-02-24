@@ -4,10 +4,12 @@ import { Badge } from "dse";
 
 const Index = () => {
   return (
-    <Badge>Index</Badge>
+    <Badge>Indexsssxs</Badge>
   );
 };
 
 const domNode = document.getElementById('root');
 const root = createRoot(domNode);
 root.render(<Index />);
+
+if (module.hot) module.hot.accept();
