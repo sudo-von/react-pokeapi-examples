@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -11,5 +13,18 @@ module.exports = {
   "framework": "@storybook/react",
   "core": {
     "builder": "@storybook/builder-webpack5"
+  },
+  "webpackFinal": async (config) => {
+    config.module.rules.push({
+      "test": /\.css$/i,
+      "use": [
+        {
+          "loader": "postcss-loader",
+          "options": { implementation: require.resolve("postcss") },
+        },
+      ],
+      include: path.resolve(__dirname, "../"),
+    });
+    return config;
   }
 }
