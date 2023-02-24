@@ -30,5 +30,8 @@ module.exports = {
                 loader: "ts-loader",
             },
         ],
+    },
+    resolve: {
+        extensions: [".css",".ts",".tsx",".js",".tsx"]
     }
 };

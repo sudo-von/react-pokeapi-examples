@@ -5,7 +5,7 @@
     "build": "webpack --config webpack.production.config.js",
     "build-test": "jest --coverage",
     "start": "npm run start-webpack",
-    "start-webpack": "webpack --config webpack-development.config.js",
+    "start-webpack": "webpack --config webpack.development.config.js",
     "start-test": "jest --watch --coverage=false"
   },
   "keywords": [],

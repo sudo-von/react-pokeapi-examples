@@ -5,10 +5,18 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: 'auto',
         filename: 'bundle.js',
         clean: true
     },
     mode: 'development',
+    devtool: 'inline-source-map',
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'dist'),
+        },
+        port: 4000,
+    },
     module: {
         rules: [
             {
@@ -36,5 +44,8 @@ module.exports = {
             title: 'Development poke-API using react hooks',
             template: './public/index.html',
         })
-    ]
+    ],
+    resolve: {
+        extensions: [".css",".ts",".tsx",".js",".tsx"]
+    }
 };

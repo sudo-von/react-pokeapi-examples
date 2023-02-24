@@ -36,5 +36,8 @@ module.exports = {
             title: 'Poke-API using react hooks',
             template: './public/index.html',
         })
-    ]
+    ],
+    resolve: {
+        extensions: [".css",".ts",".tsx",".js",".tsx"]
+    }
 };
