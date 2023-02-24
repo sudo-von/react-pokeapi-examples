@@ -1,9 +1,12 @@
 {
     "compilerOptions": {
-        "jsx": "react",
+        "jsx": "react-jsx",
         "allowJs": true,
         "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "module": "esnext",
+        "target": "esnext",
     },
     "files": [],
     "include": [],

@@ -4,10 +4,19 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        libraryTarget: 'umd'
     },
     module: {
         rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "postcss-loader"  
+                ],
+            },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
