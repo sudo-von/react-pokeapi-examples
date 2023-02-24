@@ -1,6 +1,7 @@
 {
   "name": "dse",
   "main": "dist/bundle.js",
+  "types": "src/index.d.ts",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --config webpack.production.config.js && npm run build-tailwind",
