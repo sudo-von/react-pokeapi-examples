@@ -7,12 +7,12 @@
     "build": "webpack --config webpack.production.config.js && npm run build-tailwind",
     "build-storybook": "build-storybook",
     "build-tailwind": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
-    "build-test": "jest --coverage",
+    "build-test": "jest --coverage --coverageReporters=text",
     "start": "npm-run-all --parallel start-webpack start-storybook start-tailwind",
     "start-webpack": "webpack --config webpack.development.config.js",
     "start-storybook": "start-storybook -p 3000",
     "start-tailwind": "npm run build-tailwind --watch",
-    "start-test": "jest --watchAll --coverage=false"
+    "start-test": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
