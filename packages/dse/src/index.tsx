@@ -1,6 +1,6 @@
 import './index.css';
 
-export { default as Badge } from './components/Badge/Badge';
+export { default as Badge } from './components/PokeBadge/Badge';
 export { default as Button } from './components/Button/Button';
 export { default as Card } from './components/Card/Card';
 export { default as Image } from './components/Image/Image';
