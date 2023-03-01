@@ -1,11 +1,12 @@
 import { FC, ReactNode } from 'react'
+import PokemonTypes, { PokemonTypesVariety } from '../../entities/pokemon-types';
 
-export interface IBadgeProps {
-    variety?: keyof typeof pokeBadgeVariety,
+export interface IPokeBadgeProps {
+    variety?: PokemonTypes,
     children: ReactNode,
 }
 
-const pokeBadgeVariety = {
+const classes: PokemonTypesVariety = {
     normal: "bg-slate-200 text-slate-600",
     fighting: "bg-red-200 text-red-600",
     flying: "bg-cyan-100 text-cyan-600",
@@ -28,12 +29,11 @@ const pokeBadgeVariety = {
     shadow: "bg-stone-500 text-stone-700",
 };
 
-
-const PokeBadge: FC<IBadgeProps> = ({
+const PokeBadge: FC<IPokeBadgeProps> = ({
     variety = 'normal',
     children
 }) => {
-    const className = `${pokeBadgeVariety[variety]} text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full`;
+    const className = `${classes[variety]} text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full`;
     return (
         <span className={className}>{children}</span>
     );

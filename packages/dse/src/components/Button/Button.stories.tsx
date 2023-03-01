@@ -8,37 +8,142 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
+export const Normal = Template.bind({});
 
-Primary.args = {
-    variety: 'primary',
-    children: 'Button'
+Normal.args = {
+    variety: 'normal',
+    children: 'Click me'
 };
 
-export const Secondary = Template.bind({});
+export const Fighting = Template.bind({});
 
-Secondary.args = {
-    variety: 'secondary',
-    children: 'Button'
+Fighting.args = {
+    variety: 'fighting',
+    children: 'Click me'
 };
 
-export const Danger = Template.bind({});
+export const Flying = Template.bind({});
 
-Danger.args = {
-    variety: 'danger',
-    children: 'Button'
+Flying.args = {
+    variety: 'flying',
+    children: 'Click me'
 };
 
-export const Warning = Template.bind({});
+export const Poison = Template.bind({});
 
-Warning.args = {
-    variety: 'warning',
-    children: 'Button'
+Poison.args = {
+    variety: 'poison',
+    children: 'Click me'
 };
 
-export const Info = Template.bind({});
+export const Ground = Template.bind({});
 
-Info.args = {
-    variety: 'info',
-    children: 'Button'
+Ground.args = {
+    variety: 'ground',
+    children: 'Click me'
+};
+
+export const Rock = Template.bind({});
+
+Rock.args = {
+    variety: 'rock',
+    children: 'Click me'
+};
+
+export const Bug = Template.bind({});
+
+Bug.args = {
+    variety: 'bug',
+    children: 'Click me'
+};
+
+export const Ghost = Template.bind({});
+
+Ghost.args = {
+    variety: 'ghost',
+    children: 'Click me'
+};
+
+export const Steel = Template.bind({});
+
+Steel.args = {
+    variety: 'steel',
+    children: 'Click me'
+};
+
+export const Fire = Template.bind({});
+
+Fire.args = {
+    variety: 'fire',
+    children: 'Click me'
+};
+
+export const Water = Template.bind({});
+
+Water.args = {
+    variety: 'water',
+    children: 'Click me'
+};
+
+export const Grass = Template.bind({});
+
+Grass.args = {
+    variety: 'grass',
+    children: 'Click me'
+};
+
+export const Electric = Template.bind({});
+
+Electric.args = {
+    variety: 'electric',
+    children: 'Click me'
+};
+
+export const Psychic = Template.bind({});
+
+Psychic.args = {
+    variety: 'psychic',
+    children: 'Click me'
+};
+
+export const Ice = Template.bind({});
+
+Ice.args = {
+    variety: 'ice',
+    children: 'Click me'
+};
+
+export const Dragon = Template.bind({});
+
+Dragon.args = {
+    variety: 'dragon',
+    children: 'Click me'
+};
+
+export const Dark = Template.bind({});
+
+Dark.args = {
+    variety: 'dark',
+    children: 'Click me'
+};
+
+export const Fairy = Template.bind({});
+
+Fairy.args = {
+    variety: 'fairy',
+    children: 'Click me'
+};
+
+export const Unknown = Template.bind({});
+
+Unknown.args = {
+    variety: 'unknown',
+    children: 'Click me'
+};
+
+export const Shadow = Template.bind({});
+
+Shadow.args = {
+    variety: 'shadow',
+    children: 'Click me'
 };
